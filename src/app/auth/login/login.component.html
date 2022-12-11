@@ -1,0 +1,29 @@
+<main class="asd">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" >
+<div class="content_login" >
+    <img class="" src="https://media.discordapp.net/attachments/984970824282955818/994423074449539172/unknown.png" alt="" width="122" height="82">
+    <h1>Ingreso </h1>
+    <mat-form-field class="example-full-width" >
+        <mat-label>DNI</mat-label>
+        <input matInput placeholder="Ingrese su DNI" type="text" autocomplete="off" [(ngModel)]="usuario.username">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Contraseña</mat-label>
+        <input matInput placeholder="Ingrese su contraseña" type="password" [(ngModel)]="usuario.password">
+    </mat-form-field>
+    <div class="mb-3" style="text-align: left; ">
+        <br>
+        <a class="text-success"  >¿No tienes cuenta?</a>
+    </div>
+    <button mat-raised-button  style="background-color: green; color: white;" (click)="iniciarSesion()">Iniciar Sesión</button>
+</div>
+</div>
+
+</main>
