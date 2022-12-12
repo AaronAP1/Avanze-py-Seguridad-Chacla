@@ -50,7 +50,7 @@
               <p class="card-text">Registrar Organización Social </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['/registrarsoli']">Iniciar</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['/registrarsoli']"  *ngIf="usuario.rol == 'jUNTA DIRECTIVA'" >Iniciar</button>
 
                 </div>
                 <small class="text-muted">Junta directiva</small>
@@ -71,7 +71,7 @@
               <p class="card-text">Actualizar Organización Social</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['/registrarsoli']">Iniciar </button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" [routerLink]="['/registrarsoli']" *ngIf="usuario.rol == 'JUNTA DIRECTIVA'">Iniciar </button>
 
                 </div>
                 <small class="text-muted">Junta Directiva</small>
@@ -92,7 +92,7 @@
               <p class="card-text">Mi Organizacion Social</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary" *ngIf="usuario.rol == 'JUNTA DIRECTIVA'">Ver</button>
 
                 </div>
                 <small class="text-muted">9 mins</small>
