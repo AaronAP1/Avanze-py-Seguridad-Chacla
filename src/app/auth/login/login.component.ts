@@ -27,10 +27,10 @@ export class LoginComponent implements OnInit {
         // Obtener solo el token y quitar el Bearer
         token = token.replace('Bearer ', '')
         localStorage.setItem('token', token)
-        this.router.navigate(['/navbar-dos']);
+        this.router.navigate(['/principalloged']);
         Swal.fire(
           'Bienvenido!',
-          'Al sistema..!',
+          'Al sistema GEOS!',
           'success'
         )
       },

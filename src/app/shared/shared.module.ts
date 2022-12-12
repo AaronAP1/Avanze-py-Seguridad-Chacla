@@ -8,6 +8,11 @@ import { PrincipalComponent } from './principal/principal.component';
 import { NavbarprinComponent } from './navbarprin/navbarprin.component';
 import { NavbarlogedComponent } from './navbarloged/navbarloged.component';
 import { RegistroUserComponent } from './registro-user/registro-user.component';
+import { NuevasoliComponent } from './nuevasoli/nuevasoli.component';
+import { HistorialComponent } from './historial/historial.component';
+import { OrgregistradasComponent } from './orgregistradas/orgregistradas.component';
+import { PrincipallogedComponent } from './principalloged/principalloged.component';
+import { OrgregistradaslogedComponent } from './orgregistradasloged/orgregistradasloged.component';
 
 
 
@@ -18,7 +23,12 @@ import { RegistroUserComponent } from './registro-user/registro-user.component';
     PrincipalComponent,
     NavbarprinComponent,
     NavbarlogedComponent,
-    RegistroUserComponent
+    RegistroUserComponent,
+    NuevasoliComponent,
+    HistorialComponent,
+    OrgregistradasComponent,
+    PrincipallogedComponent,
+    OrgregistradaslogedComponent
   ],
   imports: [
     CommonModule,
