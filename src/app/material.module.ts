@@ -8,7 +8,9 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatTabsModule} from '@angular/material/tabs';
 
 const materialModule = [
     MatButtonModule,
@@ -19,6 +21,9 @@ const materialModule = [
     MatSidenavModule,
     MatListModule,
     MatInputModule, 
+    MatFormFieldModule,
+    MatStepperModule,
+    MatTabsModule,
 ];
 
 @NgModule({

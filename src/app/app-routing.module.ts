@@ -8,6 +8,7 @@ import { RegistroUserComponent } from './shared/registro-user/registro-user.comp
 import { OrgregistradasComponent } from './shared/orgregistradas/orgregistradas.component';
 import { HistorialComponent } from './shared/historial/historial.component';
 import { NuevasoliComponent } from './shared/nuevasoli/nuevasoli.component';
+import { RegistrarSoliComponent } from './shared/registrar-soli/registrar-soli.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,9 @@ const routes: Routes = [
   {path: 'registroorg', component: OrgregistradasComponent},
   {path: 'historial', component: HistorialComponent},
   {path: 'nuevasoli', component: NuevasoliComponent},
+  {path: 'registrarsoli', component: RegistrarSoliComponent},
   { path: '**',  component: PageNotFoundComponent}
+  
 
   /** LOGED*/
 

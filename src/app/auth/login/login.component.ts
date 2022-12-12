@@ -2,16 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
 import { Usuario } from '../../models/Usuario.model';
+
 import Swal from 'sweetalert2'
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   usuario: Usuario = new Usuario();
 
+  hide = true;
   constructor(private router: Router, private authService: AuthService) { }
 
   ngOnInit(): void {
@@ -19,6 +22,7 @@ export class LoginComponent implements OnInit {
 
   iniciarSesion(){
     
+
     this.authService.login(this.usuario).subscribe({
       next: (resp: any) => {
         // Get Token

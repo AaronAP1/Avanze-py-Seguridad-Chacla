@@ -4,6 +4,7 @@ import { LoginComponent } from './login/login.component';
 import { MaterialModule } from '../material.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -15,7 +16,10 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    MatFormFieldModule
   ]
 })
+
+
 export class AuthModule { }

@@ -13,6 +13,7 @@ import { HistorialComponent } from './historial/historial.component';
 import { OrgregistradasComponent } from './orgregistradas/orgregistradas.component';
 import { PrincipallogedComponent } from './principalloged/principalloged.component';
 import { OrgregistradaslogedComponent } from './orgregistradasloged/orgregistradasloged.component';
+import { RegistrarSoliComponent } from './registrar-soli/registrar-soli.component';
 
 
 
@@ -28,7 +29,8 @@ import { OrgregistradaslogedComponent } from './orgregistradasloged/orgregistrad
     HistorialComponent,
     OrgregistradasComponent,
     PrincipallogedComponent,
-    OrgregistradaslogedComponent
+    OrgregistradaslogedComponent,
+    RegistrarSoliComponent
   ],
   imports: [
     CommonModule,
